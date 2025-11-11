@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字コード解釈シミュレーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>文字コード解釈シミュレーター</h1>
+    <p>授業「情報Ⅰ」向け。入力された16進数のバイト列を、各文字コードで解釈します。</p>
+
+    <h2>1. 16進数データ入力</h2>
+    <p>16進数のバイト列をスペース区切りまたは連続で入力してください (例: E3 81 82 または E38182)</p>
+    <textarea id="hexInput" rows="5" cols="60" placeholder="E3 81 82"></textarea>
+    <br>
+    <button id="decodeButton">変換実行</button>
+
+    <h2>2. 解釈結果</h2>
+    <table id="resultTable">
+        <thead>
+            <tr>
+                <th>文字コード</th>
+                <th>解釈結果 (文字列)</th>
+                <th>備考 (エラーなど)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="resultAscii">
+                <td>ASCII</td>
+                <td class="resultString"></td>
+                <td class="remarks"></td>
+            </tr>
+            <tr id="resultSjis">
+                <td>Shift_JIS</td>
+                <td class="resultString"></td>
+                <td class="remarks"></td>
+            </tr>
+            <tr id="resultEucJp">
+                <td>EUC-JP</td>
+                <td class="resultString"></td>
+                <td class="remarks"></td>
+            </tr>
+            <tr id="resultJis">
+                <td>JIS (ISO-2022-JP)</td>
+                <td class="resultString"></td>
+                <td class="remarks"></td>
+            </tr>
+            <tr id="resultUtf8">
+                <td>Unicode (UTF-8)</td>
+                <td class="resultString"></td>
+                <td class="remarks"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="main.js"></script>
+</body>
+</html>
