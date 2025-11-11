@@ -1,0 +1,72 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    color: #333;
+}
+
+textarea {
+    width: 90%;
+    max-width: 600px;
+    font-family: monospace;
+    font-size: 1.1em;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    font-size: 1.1em;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #fdfdfd;
+}
+
+/* 結果表示欄のスタイル */
+.resultString {
+    font-family: 'Meiryo', 'Hiragino Kaku Gothic ProN', sans-serif;
+    font-size: 1.2em;
+    background-color: #fff;
+    min-height: 1.5em;
+}
+
+.remarks {
+    font-size: 0.9em;
+    color: #555;
+}
